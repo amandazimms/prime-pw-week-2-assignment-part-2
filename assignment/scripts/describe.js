@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// we make a variable called name and assign it to the string "Dane".
+// we compare: if the name matches the string "Mary", we log the words "Hi, Mary!"...
+// ...if not, we log a more general greeting, "How do you do?" (since it appears we don't know their name)
 //
 
 //CODE
@@ -45,10 +45,14 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// make a variable called secret, but don't assign it to anything yet
+// make a variable called code, and assign it to the number 123.
+// compare: if the code is equal to the number 123, assign the 'secret' variable to the string "super",
+//    and assign the code variable to itself times two.
+//    since code was in fact equal to 123, both of these things will happen. secret is now super, and code is now 246.
+// compare: if the value of code is greater than the number 250, assign the string "duper" to the var "secret".
+//    (since code's value is 246, which is less than 250, it won't pass this test and won't be assigned to "duper")
+// finally, print to the console the value of secret, which should still be "super" as noted from above comment.
 
 //CODE
 /*
@@ -70,10 +74,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// make a variable isStudent and assign it to the boolean value true
+// make a variable age and assign it to the number 34
+// make a variable zip and assign it to the number 55407
+// compare: if the value of isStudent is true, and the value of zip is greater than 8000, ...
+// ...log "You're a student on the West Coast!"
+// if the above was not true, compare: if the value of isStudent is false, or the age is less than 30...
+// ... log "What are your hobbies?"
+// if (both of) the above were not true, compare: if the value of isStudent is true...
+// ... log "Welcome to Prime"
+// if (all of) the above were not true, log "How about the weather?"
+// in our case, the console will log "Welcome to Prime!", since isStudent === true, and zip < 8000.
 
 //CODE
 /*
@@ -129,12 +140,13 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
-/*
+/* //FIX - these variables are swapped. Should be colorOne = 'blue' and colorTwo = 'red'
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+  //FIX - we should also set colorTwo to 'purple'.
   colorOne = 'purple';
 }
 */
@@ -147,6 +159,7 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+//FIX - we should use && instead of || (and instead of or)
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -160,6 +173,7 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+//FIX - Should be age >= minAge, though in this case the code would run the same.
 if(minAge <= age) {
   console.log('no entry');
 } else {
